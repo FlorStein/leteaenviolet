@@ -34,23 +34,6 @@
       <div class="hero-image" role="img" aria-label="Hebras, flores y frutas de un blend artesanal"></div>
     </section>
 
-    <section class="hero-overview" id="historia">
-      <div class="overview-philosophy">
-        <p class="eyebrow">Nuestra filosofía</p>
-        <h2>Menos ruido,<br>más esencia.</h2>
-        <p>Ingredientes reales, pequeños lotes y mezclas de autor que respetan el carácter de cada hebra.</p>
-      </div>
-      <div class="overview-still"><img src="assets/la-maison.jpg" alt="Mesa de trabajo con flores, cítricos, especias y hebras para crear blends"></div>
-      <div class="overview-blends">
-        <header><span>Blends destacados</span><a href="#blends">Ver todos →</a></header>
-        <div class="overview-grid">
-          <article><img src="assets/spicy-product-v2.jpg" alt="The Spicy Way To Be"><h3>The Spicy Way To Be</h3><p>Especiado, cálido y profundo.</p></article>
-          <article><img src="assets/rose-product-v2.jpg" alt="La Vie en Rose"><h3>La Vie en Rose</h3><p>Floral, sutil y envolvente.</p></article>
-          <article><img src="assets/pomme-product-v2.jpg" alt="Éclat de Pomme"><h3>Éclat de Pomme</h3><p>Frutal, fresco y vibrante.</p></article>
-        </div>
-      </div>
-    </section>
-
     <section class="blends" id="blends">
       <header class="section-heading">
         <p class="eyebrow">Blends destacados</p>
@@ -83,6 +66,20 @@
       </article>
     </section>
 
+    <section class="maison" id="historia">
+      <div class="maison-image"><img src="assets/la-maison.jpg" alt="Mesa de trabajo con flores, cítricos, especias y hebras para crear blends"></div>
+      <div class="maison-copy">
+        <p class="eyebrow">La maison · Nuestra filosofía</p>
+        <h2>Menos ruido,<br>más esencia.</h2>
+        <p>Seleccionamos ingredientes reales y trabajamos en pequeños lotes para preservar el carácter de cada hebra, cada flor y cada fruto. Tés que honran el origen, el tiempo y el ritual.</p>
+        <dl>
+          <div><dt>Hebras</dt><dd>enteras</dd></div>
+          <div><dt>Origen</dt><dd>natural</dd></div>
+          <div><dt>Hecho</dt><dd>artesanalmente</dd></div>
+        </dl>
+      </div>
+    </section>
+
     <section class="custom-blend" id="personaliza">
       <div class="custom-photo">
         <img src="assets/packaging-violet.jpg" alt="Envase de Le Tea en Violet con el blend La Vie en Rose">
@@ -105,18 +102,41 @@
 
           <fieldset>
             <legend><span>02</span> Sumá ingredientes <small>hasta 4</small></legend>
-            <div class="choice-grid ingredients">
-              <label><input type="checkbox" name="ingredient" value="Pétalos de rosa"><span>Pétalos de rosa</span></label>
-              <label><input type="checkbox" name="ingredient" value="Hibiscus"><span>Hibiscus</span></label>
-              <label><input type="checkbox" name="ingredient" value="Manzana"><span>Manzana</span></label>
-              <label><input type="checkbox" name="ingredient" value="Cascarilla de cacao"><span>Cascarilla de cacao</span></label>
-              <label><input type="checkbox" name="ingredient" value="Canela"><span>Canela</span></label>
-              <label><input type="checkbox" name="ingredient" value="Cardamomo"><span>Cardamomo</span></label>
-              <label><input type="checkbox" name="ingredient" value="Clavo de olor"><span>Clavo de olor</span></label>
-              <label><input type="checkbox" name="ingredient" value="Jengibre"><span>Jengibre</span></label>
-              <label><input type="checkbox" name="ingredient" value="Cáscara de naranja"><span>Naranja</span></label>
-              <label><input type="checkbox" name="ingredient" value="Cáscara de limón"><span>Limón</span></label>
-              <label><input type="checkbox" name="ingredient" value="Cáscara de pomelo"><span>Pomelo</span></label>
+            <div class="ingredient-group">
+              <h3>Botánicos y flores</h3>
+              <div class="choice-grid ingredients">
+                <label><input type="checkbox" name="ingredient" value="Hibiscus"><span>Hibiscus</span></label>
+                <label><input type="checkbox" name="ingredient" value="Pétalos de rosa"><span>Pétalos de rosa</span></label>
+                <label><input type="checkbox" name="ingredient" value="Menta orgánica disecada"><span>Menta orgánica</span></label>
+                <label><input type="checkbox" name="ingredient" value="Manzanilla"><span>Manzanilla</span></label>
+                <label><input type="checkbox" name="ingredient" value="Eucaliptus"><span>Eucaliptus</span></label>
+              </div>
+            </div>
+            <div class="ingredient-group">
+              <h3>Frutas y otros</h3>
+              <div class="choice-grid ingredients">
+                <label><input type="checkbox" name="ingredient" value="Cáscara de naranja"><span>Naranja</span></label>
+                <label><input type="checkbox" name="ingredient" value="Cáscara de pomelo"><span>Pomelo</span></label>
+                <label><input type="checkbox" name="ingredient" value="Cáscara de limón"><span>Limón</span></label>
+                <label><input type="checkbox" name="ingredient" value="Manzana"><span>Manzana</span></label>
+                <label><input type="checkbox" name="ingredient" value="Avellanas"><span>Avellanas</span></label>
+                <label><input type="checkbox" name="ingredient" value="Cascarilla de cacao"><span>Cascarilla de cacao</span></label>
+              </div>
+            </div>
+            <div class="ingredient-group">
+              <h3>Especias</h3>
+              <div class="choice-grid ingredients">
+                <label><input type="checkbox" name="ingredient" value="Jengibre en raíz"><span>Jengibre · raíz</span></label>
+                <label><input type="checkbox" name="ingredient" value="Jengibre en polvo"><span>Jengibre · polvo</span></label>
+                <label><input type="checkbox" name="ingredient" value="Canela en rama"><span>Canela en rama</span></label>
+                <label><input type="checkbox" name="ingredient" value="Clavo de olor"><span>Clavo de olor</span></label>
+                <label><input type="checkbox" name="ingredient" value="Anís estrellado"><span>Anís estrellado</span></label>
+                <label><input type="checkbox" name="ingredient" value="Cardamomo"><span>Cardamomo</span></label>
+                <label><input type="checkbox" name="ingredient" value="Pimienta negra"><span>Pimienta negra</span></label>
+                <label><input type="checkbox" name="ingredient" value="Pimienta blanca"><span>Pimienta blanca</span></label>
+                <label><input type="checkbox" name="ingredient" value="Pimienta de Jamaica"><span>Pimienta de Jamaica</span></label>
+                <label><input type="checkbox" name="ingredient" value="Pimienta de Cayena"><span>Pimienta de Cayena</span></label>
+              </div>
             </div>
             <p class="form-message" id="ingredient-message" aria-live="polite"></p>
           </fieldset>
