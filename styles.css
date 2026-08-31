@@ -10,3 +10,16 @@ footer{padding:2rem var(--pad);display:flex;justify-content:space-between;gap:1r
 @media(max-width:850px){.menu-toggle{display:block}.site-header nav{display:none;position:absolute;top:88px;left:0;right:0;background:var(--paper);padding:1.5rem var(--pad);flex-direction:column;border-bottom:1px solid var(--line)}.site-header nav.open{display:flex}.brand span{font-size:.8rem}.hero{grid-template-columns:1fr}.hero-copy{min-height:680px}.hero-image{min-height:60vh}.manifesto,.ritual,.contact{grid-template-columns:1fr}.manifesto{gap:2rem}.manifesto dl{border-left:0}.section-heading{grid-template-columns:1fr;gap:1rem}.blend,.blend.reverse{grid-template-columns:50px 1fr}.blend img,.blend.reverse img{grid-column:2;order:initial;height:360px}.blend div{grid-column:2}.contact .eyebrow,.button.light{grid-column:1}.contact>p:not(.eyebrow){margin-top:2rem}footer{flex-direction:column}.index{display:none}}
 @media(max-width:520px){.site-header{height:74px}.site-header nav{top:74px}.brand img{width:42px;height:42px}.hero{min-height:calc(100svh - 74px)}.hero-copy{min-height:610px}.hero h1{font-size:3.7rem}.blend,.blend.reverse{grid-template-columns:1fr}.blend-number,.blend img,.blend.reverse img,.blend div{grid-column:1}.blend img,.blend.reverse img{height:300px}.button{min-width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Actualización editorial: tipografía más legible y galería completa */
+.hero h1,.manifesto h2,.section-heading h2,.ritual h2,.contact h2,.manifesto dd,.blend-number,.blend h3{font-family:"DM Serif Display",serif}
+.hero-image{background-image:linear-gradient(90deg,rgba(30,20,15,.08),transparent),url("assets/spicy-detail.png")}
+.blend.reverse .blend-media{order:3}
+.blend-media{position:relative;height:440px;overflow:hidden;background:var(--paper-2)}
+.blend-media img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:saturate(.78);transition:opacity .45s ease,transform .7s ease}
+.blend-media .blend-detail{position:absolute;inset:0;opacity:0}
+.blend-media:hover .blend-detail{opacity:1}
+.blend-media:hover img{transform:scale(1.025)}
+
+@media(max-width:850px){.blend-media,.blend.reverse .blend-media{grid-column:2;order:initial;height:360px}.blend>div:not(.blend-media){grid-column:2}}
+@media(max-width:520px){.blend-media,.blend.reverse .blend-media,.blend>div:not(.blend-media){grid-column:1}.blend-media,.blend.reverse .blend-media{height:300px}}
