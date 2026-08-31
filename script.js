@@ -28,15 +28,15 @@ function updateBlend() {
   const base = selectedValue('base');
   const size = selectedValue('size');
   const ingredients = selectedIngredients();
-  const atLimit = ingredients.length >= 4;
+  const atLimit = ingredients.length >= 5;
 
   ingredientInputs.forEach(input => {
     input.disabled = atLimit && !input.checked;
   });
 
   ingredientMessage.textContent = ingredients.length
-    ? `${ingredients.length} de 4 ingredientes elegidos.`
-    : 'Podés elegir entre 1 y 4 ingredientes.';
+    ? `${ingredients.length} de 5 ingredientes elegidos.`
+    : 'Podés sumar hasta 5 ingredientes.';
 
   if (!base) {
     summary.textContent = 'Elegí una base para comenzar.';
@@ -57,16 +57,10 @@ form.addEventListener('submit', event => {
   const size = selectedValue('size');
   const ingredients = selectedIngredients();
 
-  if (!ingredients.length) {
-    ingredientMessage.textContent = 'Elegí al menos un ingrediente para crear tu blend.';
-    ingredientInputs[0].focus();
-    return;
-  }
-
   const message = [
     'Hola, quiero encargar un blend personalizado de Le Tea en Violet.',
     `Base: ${base}`,
-    `Ingredientes: ${ingredients.join(', ')}`,
+    `Ingredientes adicionales: ${ingredients.length ? ingredients.join(', ') : 'ninguno'}`,
     `Presentación: ${size}`,
     '¿Me confirman disponibilidad y valor?'
   ].join('\n');
