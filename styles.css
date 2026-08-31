@@ -35,6 +35,8 @@ footer{padding:2rem var(--pad);display:flex;justify-content:space-between;gap:1r
   .site-header{position:absolute;top:0;left:0;right:0;height:92px;border:0;color:var(--white);padding:0 2rem 0 var(--pad)}
   .site-header .brand{color:var(--ink);width:43%;flex:0 0 43%}
   .site-header nav{gap:clamp(1rem,2vw,2.2rem);font-size:.64rem}
+  .maison-copy{order:1}.maison-image{order:2}
+  .custom-photo img{object-fit:contain;padding:clamp(1.75rem,3vw,3.5rem)}
 }
 .hero{height:auto;min-height:640px;max-height:none;grid-template-columns:46% 54%}
 .hero-copy{min-width:0;padding:128px var(--pad) 58px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
