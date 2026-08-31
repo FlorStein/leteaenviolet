@@ -86,3 +86,7 @@ html,body{max-width:100%;overflow-x:hidden}main,section,header,footer,form,field
 @media(max-width:360px){
   .choice-grid.bases,.choice-grid.ingredients,.choice-grid.sizes{grid-template-columns:1fr}.choice-grid.bases label:last-child{grid-column:auto}.custom-photo{min-height:400px}.maison-image{min-height:380px}
 }
+
+/* Tipografía del catálogo: Georgia para identidad y Aptos para lectura */
+body,.ingredient-group h3{font-family:Aptos,"Segoe UI",Arial,sans-serif}
+.hero h1,.manifesto h2,.section-heading h2,.custom-builder h2,.ritual h2,.contact h2,.manifesto dd,.blend-number,.blend h3,#blend-form legend>span,.blend-summary p,.overview-philosophy h2,.overview-grid h3,.maison-copy h2,.maison-copy dd{font-family:Georgia,"Times New Roman",serif}
