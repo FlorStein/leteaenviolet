@@ -20,7 +20,7 @@ footer{padding:2rem var(--pad);display:flex;justify-content:space-between;gap:1r
 .blend-media:hover img{transform:scale(1.025)}
 
 .custom-blend{display:grid;grid-template-columns:minmax(320px,.8fr) minmax(480px,1.2fr);background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.custom-photo{position:relative;min-height:880px;overflow:hidden;background:var(--paper)}.custom-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.custom-photo span{position:absolute;left:1.5rem;bottom:1.5rem;background:rgba(250,246,215,.92);padding:.8rem 1rem;text-transform:uppercase;font-size:.65rem;letter-spacing:.13em}
+.custom-photo{position:relative;min-height:880px;overflow:hidden;background:var(--paper);display:grid;grid-template-rows:repeat(2,minmax(0,1fr))}.custom-photo-panel{position:relative;min-height:0;overflow:hidden}.custom-photo-panel+.custom-photo-panel{border-top:1px solid var(--line)}.custom-photo-panel img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center}.custom-photo span{position:absolute;z-index:2;left:1.5rem;bottom:1.5rem;background:rgba(250,246,215,.92);padding:.8rem 1rem;text-transform:uppercase;font-size:.65rem;letter-spacing:.13em}
 .custom-builder{padding:clamp(4rem,7vw,7rem) var(--pad)}.custom-builder h2{font-weight:400;text-transform:uppercase;line-height:.93;margin:0;font-size:clamp(3.2rem,5.5vw,6rem)}.custom-intro{max-width:39rem;line-height:1.7;margin:2rem 0 3.5rem}
 #blend-form{max-width:48rem}#blend-form fieldset{border:0;border-top:1px solid var(--line);padding:1.5rem 0 2rem;margin:0}#blend-form legend{padding:0 1rem 0 0;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;font-weight:600}#blend-form legend>span{font-family:"DM Serif Display",serif;font-size:1.25rem;margin-right:.7rem}#blend-form legend small{font-size:.62rem;font-weight:400;margin-left:.6rem;color:var(--muted)}
 .choice-grid{display:grid;gap:.65rem;margin-top:.5rem}.choice-grid.bases{grid-template-columns:repeat(3,1fr)}.choice-grid.ingredients{grid-template-columns:repeat(3,1fr)}.choice-grid.sizes{grid-template-columns:repeat(2,minmax(100px,160px))}.choice-grid label{cursor:pointer;position:relative}.choice-grid input{position:absolute;opacity:0;pointer-events:none}.choice-grid label span{display:flex;align-items:center;justify-content:center;min-height:48px;padding:.7rem .8rem;border:1px solid var(--line);background:rgba(255,255,255,.2);font-size:.78rem;text-align:center;transition:background .2s,color .2s,border-color .2s}.choice-grid input:checked+span{background:var(--accent);border-color:var(--accent);color:var(--white)}.choice-grid input:focus-visible+span{outline:2px solid var(--accent);outline-offset:3px}.choice-grid input:disabled+span{opacity:.38;cursor:not-allowed}
@@ -36,7 +36,7 @@ footer{padding:2rem var(--pad);display:flex;justify-content:space-between;gap:1r
   .site-header .brand{color:var(--ink);width:43%;flex:0 0 43%}
   .site-header nav{gap:clamp(1rem,2vw,2.2rem);font-size:.64rem}
   .maison-copy{order:1}.maison-image{order:2}
-  .custom-photo img{object-fit:contain;padding:clamp(1.75rem,3vw,3.5rem)}
+  .custom-photo-panel img{object-fit:cover;padding:0}
 }
 .hero{height:auto;min-height:640px;max-height:none;grid-template-columns:46% 54%}
 .hero-copy{min-width:0;padding:128px var(--pad) 58px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
@@ -80,7 +80,7 @@ html,body{max-width:100%;overflow-x:hidden}main,section,header,footer,form,field
   .blends{padding:4.5rem var(--pad)}.section-heading{padding-bottom:2rem}.section-heading h2{font-size:clamp(2.35rem,12vw,3.2rem)}
   .blend{gap:1rem;padding:2.2rem 0}.blend h3{font-size:clamp(2.1rem,11vw,2.8rem)}.blend p{font-size:.88rem}.blend-media,.blend.reverse .blend-media{height:auto;aspect-ratio:4/3}
   .maison-image{min-height:430px}.maison-copy{padding:4rem var(--pad)}.maison-copy h2{font-size:clamp(2.5rem,13vw,3.4rem)}.maison-copy>p:not(.eyebrow){font-size:.9rem;margin:1.5rem 0 2rem}.maison-copy dl div{gap:1rem}.maison-copy dd{font-size:1.2rem;text-align:right}
-  .custom-photo{min-height:460px}.custom-builder{padding:4rem var(--pad)}.custom-builder h2{font-size:clamp(2.45rem,12.5vw,3.3rem)}.custom-intro{font-size:.9rem;margin:1.5rem 0 2.5rem}#blend-form{width:100%;min-width:0}.choice-grid label span{padding:.65rem .45rem;font-size:.72rem;overflow-wrap:anywhere}.blend-summary p{font-size:1.08rem;overflow-wrap:anywhere}
+  .custom-photo{min-height:0}.custom-photo-panel{aspect-ratio:2/3}.custom-builder{padding:4rem var(--pad)}.custom-builder h2{font-size:clamp(2.45rem,12.5vw,3.3rem)}.custom-intro{font-size:.9rem;margin:1.5rem 0 2.5rem}#blend-form{width:100%;min-width:0}.choice-grid label span{padding:.65rem .45rem;font-size:.72rem;overflow-wrap:anywhere}.blend-summary p{font-size:1.08rem;overflow-wrap:anywhere}
   .ritual{padding:4rem var(--pad);gap:2rem}.ritual h2{font-size:clamp(2.4rem,12vw,3.2rem)}.ritual li{font-size:.78rem;gap:1rem}
   .contact{display:block;padding:4rem var(--pad)}.contact h2{font-size:clamp(1.7rem,10.5vw,3rem);line-height:.95;letter-spacing:-.035em;white-space:nowrap}.contact>p:not(.eyebrow){font-size:.78rem;margin:1.5rem 0 0}.contact .button.light{grid-column:auto}
   footer{width:100%;padding:1.8rem var(--pad);font-size:.58rem;line-height:1.5}
