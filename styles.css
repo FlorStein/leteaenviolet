@@ -1,4 +1,4 @@
-:root{--paper:#faf6d7;--paper-2:#faf6d7;--ink:#320b35;--deep-purple:#320b35;--line:rgba(50,11,53,.24);--accent:#320b35;--white:#faf6d7;--muted:#6f5571;--pad:clamp(1.25rem,4vw,4.5rem)}
+:root{--paper:#faf6d7;--paper-2:#faf6d7;--ink:#3c0941;--deep-purple:#3c0941;--line:rgba(60,9,65,.24);--accent:#3c0941;--white:#faf6d7;--muted:#3c0941;--pad:clamp(1.25rem,4vw,4.5rem)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
 .site-header{height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);border-bottom:1px solid var(--line);position:relative;z-index:20}.brand{display:flex;align-items:center;gap:.75rem;font-weight:600;letter-spacing:.08em}.brand img{width:54px;height:54px;object-fit:contain}.site-header nav{display:flex;gap:2rem;text-transform:uppercase;font-size:.72rem;letter-spacing:.12em}.site-header nav a{padding:.5rem 0;border-bottom:1px solid transparent}.site-header nav a:hover{border-color:currentColor}.menu-toggle{display:none;background:none;border:0;font:inherit;text-transform:uppercase;letter-spacing:.1em}
 .hero{min-height:calc(100svh - 88px);display:grid;grid-template-columns:46% 54%;border-bottom:1px solid var(--line)}.hero-copy{padding:clamp(2rem,5vw,5rem) var(--pad);position:relative}.index{position:absolute;left:1rem;top:45%;font-size:.7rem;writing-mode:vertical-rl;letter-spacing:.15em}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.68rem;margin:0 0 1.5rem}.hero h1,.manifesto h2,.section-heading h2,.ritual h2,.contact h2{font-family:"Italiana",serif;font-weight:400;text-transform:uppercase;line-height:.93;margin:0}.hero h1{font-size:clamp(3.7rem,7.5vw,7.8rem);letter-spacing:-.03em}.lead{max-width:31rem;line-height:1.6;margin:2rem 0}.button{display:inline-flex;justify-content:space-between;gap:3rem;background:var(--deep-purple);color:var(--white);padding:1.1rem 1.5rem;text-transform:uppercase;font-size:.75rem;letter-spacing:.14em;min-width:260px}.button:hover span{transform:translateX(.4rem)}.button span{transition:transform .2s}.hero-image{min-height:620px;background:linear-gradient(90deg,rgba(50,11,53,.08),transparent),url("assets/hero-editorial.webp") center/cover no-repeat;filter:saturate(.7)}
@@ -13,7 +13,7 @@ footer{padding:2rem var(--pad);display:flex;justify-content:space-between;gap:1r
 
 /* Actualización editorial: tipografía más legible y galería completa */
 .hero h1,.manifesto h2,.section-heading h2,.custom-builder h2,.ritual h2,.contact h2,.manifesto dd,.blend-number,.blend h3{font-family:"DM Serif Display",serif}
-.hero-image{background-image:linear-gradient(90deg,rgba(50,11,53,.08),transparent),url("assets/hero-editorial.webp")}
+.hero-image{background-image:linear-gradient(90deg,rgba(60,9,65,.08),transparent),url("assets/hero-editorial.webp")}
 .blend.reverse .blend-media{order:3}
 .blend-media{position:relative;height:440px;overflow:hidden;background:var(--paper-2)}
 .blend-media img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.82);transition:opacity .45s ease,transform .7s ease}
@@ -92,3 +92,4 @@ html,body{max-width:100%;overflow-x:hidden}main,section,header,footer,form,field
 /* Tipografía del catálogo: Georgia para identidad y Aptos para lectura */
 body,.ingredient-group h3{font-family:Aptos,"Segoe UI",Arial,sans-serif}
 .hero h1,.manifesto h2,.section-heading h2,.custom-builder h2,.ritual h2,.contact h2,.manifesto dd,.blend-number,.blend h3,#blend-form legend>span,.blend-summary p,.overview-philosophy h2,.overview-grid h3,.maison-copy h2,.maison-copy dd{font-family:Georgia,"Times New Roman",serif}
+.hero-image{background-image:linear-gradient(90deg,rgba(60,9,65,.08),transparent),url("assets/hero-editorial.webp")}
